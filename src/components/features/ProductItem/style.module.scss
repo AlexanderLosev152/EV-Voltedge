@@ -1,0 +1,33 @@
+//.item {
+//	@include mixins.grid(20rem, 1.1rem);
+//}
+
+.img {
+	margin-bottom: 1.1rem;
+}
+
+.title {
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 24px;
+	color: var(--primary-color);
+	margin-bottom: 1rem;
+}
+
+.descr {
+	margin-bottom: 1rem;
+}
+
+.price {
+	display: flex;
+	gap: 0.5rem;
+	span {
+		font-size: 1.5rem;
+	}
+	span:nth-child(1) {
+		color: var(--subtext-color);
+	}
+	span:nth-child(2) {
+		color: var(--primary-color);
+	}
+}

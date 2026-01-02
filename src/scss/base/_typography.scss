@@ -1,0 +1,9 @@
+@use '../abstracts/mixins' as mixins;
+
+@include mixins.font-face('Syne', 'Syne-Regular', $weight: 500, $style: normal);
+@include mixins.font-face(
+	'Syne',
+	'Syne-SemiBold',
+	$weight: 600,
+	$style: normal
+);

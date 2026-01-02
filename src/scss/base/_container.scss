@@ -1,0 +1,10 @@
+.container {
+	width: var(--container-w);
+	max-width: 100%;
+	padding-inline: var(--container-p);
+	margin-inline: auto;
+}
+
+.section {
+	margin-bottom: 128px;
+}

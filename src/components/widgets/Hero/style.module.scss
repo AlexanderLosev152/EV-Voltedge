@@ -1,0 +1,68 @@
+@use '../../../scss/abstracts/mixins';
+
+.hero {
+	background: linear-gradient(180deg, #e9e9e9 40%, #fff 100%);
+	background-repeat: no-repeat;
+}
+.title {
+	display: grid;
+	font-family: var(--font-family);
+	font-weight: 600;
+	font-size: clamp(2rem, 19vw, 14.75rem);
+	line-height: 1.2;
+	letter-spacing: 0.04em;
+	color: var(--primary-color);
+	max-height: 600px;
+	text-wrap: nowrap;
+	span:nth-child(2) {
+		color: var(--background-color-3);
+	}
+}
+
+.wrapper {
+	padding-top: clamp(5rem, 10vw, 10rem);
+}
+
+.text {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-height: 600px;
+}
+
+.bg {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	width: min(51rem, 60%);
+	margin-inline: auto;
+	margin-block: auto;
+	display: flex;
+}
+
+.items {
+	@include mixins.grid(20rem, 1rem);
+	justify-items: center;
+	div {
+		display: flex;
+		align-items: center;
+		gap: 1.375rem;
+		max-width: 19.75rem;
+		span:nth-child(1) {
+			font-family: var(--font-family);
+			font-weight: 600;
+			font-size: clamp(2rem, 5vw, 5rem);
+			text-transform: uppercase;
+			color: var(--primary-color);
+		}
+		span:nth-child(2) {
+			font-family: var(--font-family);
+			font-weight: 400;
+			font-size: clamp(0.8rem, 2vw, 1.5rem);
+			color: var(--subtext-color);
+		}
+	}
+}
