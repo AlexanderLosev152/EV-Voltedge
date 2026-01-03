@@ -6,5 +6,5 @@
 }
 
 .section {
-	margin-bottom: 128px;
+	margin-bottom: clamp(2rem, 10vw, 8rem);
 }

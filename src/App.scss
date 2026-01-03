@@ -14,7 +14,7 @@
 body {
 	font-family: var(--font-family);
 	font-weight: 400;
-	font-size: 1.125rem;
+	font-size: clamp(0.8rem, 2vw, 1.125rem);
 	color: var(--subtext-color);
 }
 
@@ -23,6 +23,40 @@ body {
 	font-weight: 400;
 	font-size: clamp(2rem, 5vw, 3.75rem);
 	text-transform: capitalize;
-	text-align: center;
 	color: var(--primary-color);
+}
+
+.h3 {
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 60px;
+	text-transform: capitalize;
+	color: #1d1d1e;
+}
+
+.h4 {
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 42px;
+	color: #1d1d1e;
+}
+
+.h5 {
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: clamp(1.5rem, 3vw, 2.25rem);
+	text-transform: capitalize;
+	color: #1d1d1e;
+}
+
+.swiper-wrapper {
+	padding-bottom: 3rem;
+}
+
+.swiper-pagination-bullet-active {
+	background: var(--primary-color);
+}
+
+.swiper-pagination-bullet {
+	background: var(--subtext-color);
 }

@@ -6,13 +6,17 @@ import { ProductItem } from '../../features/ProductItem/ProductItem';
 import { Title } from '../../features/Title/Title';
 
 import styles from './style.module.scss';
+import { SpanTitle } from '../../features/SpanTitle/SpanTitle';
 
 export const Products = () => {
 	return (
 		<section className={classNames(styles.products, 'section', 'container')}>
-			<Title Tag={'h2'} className={'h2'} span={'Versatile Power'}>
-				Discover Our Multi-functional chargers
-			</Title>
+			<div className={styles.wrapper}>
+				<SpanTitle>Versatile Power</SpanTitle>
+				<Title Tag={'h2'} className={'h2'}>
+					Discover Our Multi-functional chargers
+				</Title>
+			</div>
 
 			<div className={classNames(styles.items, styles.product)}>
 				{products.map((product) => (

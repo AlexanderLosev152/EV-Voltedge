@@ -1,0 +1,82 @@
+@use '../../../scss/abstracts/mixins';
+@use '../../../scss/abstracts/media' as media;
+
+.titlebox {
+	display: grid;
+	place-items: start;
+	gap: 1rem;
+	margin-bottom: clamp(1.5rem, 4vw, 3.75rem);
+}
+
+.text {
+	display: grid;
+	grid-template-columns: 1fr clamp(14rem, 25vw, 21.5rem);
+	gap: 5rem;
+	@include media.tablet {
+		grid-template-columns: 1fr;
+		gap: 0.5rem;
+	}
+	h2 {
+		text-align: start;
+	}
+}
+
+.content {
+	@include mixins.grid(30rem, 1rem);
+	@include media.tablet-big {
+		@include mixins.grid(clamp(18rem, 25vw, 30rem), 1rem);
+	}
+}
+
+.leftbox {
+	display: grid;
+	align-content: space-between;
+	height: min(31.25rem, 100%);
+	.title {
+		margin-bottom: 1rem;
+	}
+	p {
+		max-width: 80%;
+	}
+	img {
+		margin-bottom: 1rem;
+	}
+}
+
+.rightbox {
+	position: relative;
+	height: clamp(20rem, 50vw, 31.25rem);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	@include media.tablet-big {
+	}
+	.title {
+		margin-bottom: 0.625rem;
+	}
+}
+
+.rigthboximg {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	z-index: -1;
+	filter: brightness(50%);
+}
+
+.rigthboxdiv {
+	position: absolute;
+	bottom: 0;
+	margin: 1rem;
+	border: 1px solid var(--white-transparent-1);
+	padding: 1.875rem 1.5rem;
+	backdrop-filter: blur(1.5rem);
+	background: var(--white-transparent-2);
+	color: #fff;
+}
+
+.descrbox {
+	margin-bottom: 2rem;
+}

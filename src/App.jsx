@@ -4,6 +4,7 @@ import { Hero } from './components/widgets/Hero/Hero';
 import { Products } from './components/widgets/Products/Products';
 
 import './App.scss';
+import { Mobility } from './components/widgets/Mobility/Mobility';
 
 function App() {
 	return (
@@ -11,7 +12,8 @@ function App() {
 			<Header />
 			<Hero />
 			<Products />
-			{/*<Features />*/}
+			<Features />
+			<Mobility />
 		</>
 	);
 }
