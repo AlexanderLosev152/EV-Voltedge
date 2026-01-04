@@ -5,6 +5,7 @@ import { Products } from './components/widgets/Products/Products';
 
 import './App.scss';
 import { Mobility } from './components/widgets/Mobility/Mobility';
+import { Comfort } from './components/widgets/Comfort/Comfort';
 
 function App() {
 	return (
@@ -14,6 +15,7 @@ function App() {
 			<Products />
 			<Features />
 			<Mobility />
+			<Comfort />
 		</>
 	);
 }

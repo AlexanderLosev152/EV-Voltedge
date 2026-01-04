@@ -13,8 +13,8 @@ import styles from './style.module.scss';
 
 export const Mobility = () => {
 	return (
-		<section className={styles.mobility}>
-			<div className={classNames('section', 'container')}>
+		<section className={classNames(styles.mobility, 'section')}>
+			<div className={'container'}>
 				<div className={styles.mobilityTitle}>
 					<SpanTitle>Versatile Power</SpanTitle>
 					<Title Tag={'h2'} className={'h2'}>
