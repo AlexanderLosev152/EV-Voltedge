@@ -22,8 +22,8 @@ export const Hero = () => {
 				</div>
 
 				<div className={styles.items}>
-					{items.map((item) => (
-						<div>
+					{items.map((item, index) => (
+						<div key={index}>
 							<span>{item.number}</span>
 							<span>{item.title}</span>
 						</div>

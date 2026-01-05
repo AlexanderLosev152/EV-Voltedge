@@ -19,14 +19,14 @@ export const Products = () => {
 			</div>
 
 			<div className={classNames(styles.items, styles.product)}>
-				{products.map((product) => (
-					<ProductItem data={product} />
+				{products.map((product, index) => (
+					<ProductItem data={product} key={index} />
 				))}
 			</div>
 
 			<div className={styles.myswiper}>
 				<MySwiper items={products}>
-					{(product) => <ProductItem data={product} />}
+					{(product, index) => <ProductItem data={product} key={index} />}
 				</MySwiper>
 			</div>
 		</section>

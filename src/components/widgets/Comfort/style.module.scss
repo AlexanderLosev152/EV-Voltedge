@@ -21,3 +21,13 @@
 	height: 100%;
 	object-fit: cover; /* чтобы изображение заполняло слайд */
 }
+
+.myswiper {
+	margin-bottom: 8rem;
+}
+
+
+.formWrapper {
+	display: grid;
+	grid-template-columns: 500px 1fr;
+}

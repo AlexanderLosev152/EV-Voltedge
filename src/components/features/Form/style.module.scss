@@ -1,0 +1,43 @@
+.form {
+	display: grid;
+	gap: 1.25rem;
+	width: 505px;
+	div {
+		display: grid;
+	}
+	.namebox {
+		display: flex;
+		gap: 1.15rem;
+	}
+	.btn {
+		display: grid;
+		justify-items: start;
+		button {
+			color: var(--secondary-color);
+			background: var(--primary-color);
+		}
+	}
+	label {
+		padding-bottom: 1rem;
+	}
+	input,
+	textarea {
+		border: none;
+		outline: none;
+		background: var(--background-color-2);
+		padding: 1rem;
+	}
+	input::placeholder {
+		font-family: var(--font-family);
+		font-weight: 400;
+		font-size: 18px;
+		color: var(--subtext-color);
+	}
+	textarea {
+		min-height: 7.375rem;
+		resize: none;
+	}
+}
+.namebox {
+	display: flex;
+}

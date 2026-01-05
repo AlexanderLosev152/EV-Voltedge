@@ -1,3 +1,5 @@
+@use 'normalize.css';
+
 @use './scss/abstracts/animations';
 @use './scss/abstracts/functions';
 @use './scss/abstracts/media';
@@ -7,9 +9,6 @@
 @use './scss/base/reset';
 @use './scss/base/typography';
 @use './scss/base/container';
-
-@use 'normalize.css';
-//@use '../node_modules/swiper/swiper.css';
 
 body {
 	font-family: var(--font-family);

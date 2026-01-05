@@ -6,7 +6,10 @@ import { MySwiper } from '../../features/MySwiper/MySwiper';
 import { SpanTitle } from '../../features/SpanTitle/SpanTitle';
 import { Title } from '../../features/Title/Title';
 
+import CAR from '/images/car.png'
+
 import styles from './style.module.scss';
+import {Form} from '../../features/Form/Form.jsx';
 
 export const Comfort = () => {
 	const swiperOptions = {
@@ -45,6 +48,11 @@ export const Comfort = () => {
 				<MySwiper items={comfortslide} options={swiperOptions}>
 					{(slide) => <Comfortslide data={slide} />}
 				</MySwiper>
+			</div>
+
+			<div className={classNames(styles.formWrapper,'container')}>
+				<Form />
+				<img src={CAR} alt=""/>
 			</div>
 		</section>
 	);

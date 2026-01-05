@@ -24,8 +24,8 @@ export const Header = () => {
 
 				<nav className={styles.nav}>
 					<ul>
-						{items.map((item) => (
-							<li>
+						{items.map((item, index) => (
+							<li key={index}>
 								<a className={styles.link} href={item.link}>
 									{item.title}
 								</a>
