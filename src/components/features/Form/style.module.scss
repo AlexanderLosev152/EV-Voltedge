@@ -1,3 +1,4 @@
+@use '../../../scss/abstracts/media' as media;
 .form {
 	display: grid;
 	gap: 1.25rem;
@@ -39,4 +40,7 @@
 }
 .namebox {
 	display: flex;
+	@include media.tablet {
+		flex-direction: column;
+	}
 }
