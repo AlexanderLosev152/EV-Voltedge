@@ -1,0 +1,39 @@
+@use '../../../scss/abstracts/mixins' as mixin;
+@use '../../../scss/abstracts/media' as media;
+
+.footer {
+	display: grid;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	color: var(--background-color-1);
+}
+
+.wrapper {
+	backdrop-filter: blur(2rem);
+	background: var(--white-transparent-2);
+	padding: 3.125rem;
+	margin-block: 3.125rem;
+}
+
+.box {
+	display: flex;
+	justify-content: space-between;
+}
+
+.items {
+	display: flex;
+	gap: 90px;
+}
+
+.bottom {
+	color: var(--background-color-1);
+	margin-block: 2.5rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	div {
+		display: flex;
+		gap: 1.5rem;
+	}
+}

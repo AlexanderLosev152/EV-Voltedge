@@ -4,7 +4,8 @@ import { Btn } from '../../features/Btn/Btn';
 
 import styles from './style.module.scss';
 
-import LOGO from '/images/logo.svg';
+
+import { Logo } from '../../features/Logo/Logo';
 
 export const Header = () => {
 	const items = [
@@ -17,9 +18,7 @@ export const Header = () => {
 		<header className={classNames(styles.header, 'container')}>
 			<div className={styles.wrapper}>
 				<div className={styles.logo}>
-					<a href='#'>
-						<img src={LOGO} alt='alt' />
-					</a>
+					<Logo />
 				</div>
 
 				<nav className={styles.nav}>

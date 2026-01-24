@@ -1,13 +1,15 @@
 @use '../../../scss/abstracts/media' as media;
 .form {
 	display: grid;
-	gap: 1.25rem;
+	gap: clamp(1rem, 2vw, 1.25rem);
 	div {
 		display: grid;
+		width: 100%;
 	}
 	.namebox {
 		display: flex;
-		gap: 1.15rem;
+		justify-content: space-between;
+		gap: clamp(1rem, 2vw, 1.15rem);
 	}
 	.btn {
 		display: grid;
@@ -30,7 +32,7 @@
 	input::placeholder {
 		font-family: var(--font-family);
 		font-weight: 400;
-		font-size: 18px;
+		font-size: clamp(1rem, 2vw, 1.25rem);
 		color: var(--subtext-color);
 	}
 	textarea {
@@ -40,7 +42,7 @@
 }
 .namebox {
 	display: flex;
-	@include media.tablet {
+	@include media.tablet-big {
 		flex-direction: column;
 	}
 }

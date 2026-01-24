@@ -50,9 +50,11 @@ export const Comfort = () => {
 				</MySwiper>
 			</div>
 
-			<div className={classNames(styles.formWrapper, 'container')}>
-				<Form />
-				<img className={styles.comfortImg} src={CAR} alt='' />
+			<div className={styles.formWrapper}>
+				<div className={classNames(styles.formBox, 'container')}>
+					<Form />
+					<img className={styles.comfortImg} src={CAR} alt='' />
+				</div>
 			</div>
 		</section>
 	);

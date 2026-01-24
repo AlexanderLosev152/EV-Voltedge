@@ -1,4 +1,4 @@
-@use '../../../scss/abstracts/mixins';
+@use '../../../scss/abstracts/mixins' as mixin;
 @use '../../../scss/abstracts/media' as media;
 
 .comfortTitle {
@@ -22,17 +22,17 @@
 .swiper-slide img {
 	width: 100%;
 	height: 100%;
-	object-fit: cover; /* чтобы изображение заполняло слайд */
+	object-fit: cover;
 }
 
 .myswiper {
 	margin-bottom: 8rem;
 }
 
-.formWrapper {
-	display: grid;
-	grid-template-columns: min(31.25rem, 100%) min(59.75rem, 100%);
-	gap: 1.4rem;
+.formBox {
+	@include mixin.grid(30rem, 1rem);
+	gap: clamp(1rem, 4vw, 3rem);
+	align-items: center;
 	@include media.tablet {
 		grid-template-columns: 1fr;
 	}
