@@ -2,11 +2,11 @@
 @use '../../../scss/abstracts/media' as media;
 
 .footer {
-	display: grid;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
-	color: var(--background-color-1);
+  //display: grid;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: var(--padding);
 }
 
 .wrapper {
