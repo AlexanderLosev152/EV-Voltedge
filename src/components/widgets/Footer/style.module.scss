@@ -1,39 +1,70 @@
 @use '../../../scss/abstracts/mixins' as mixin;
 @use '../../../scss/abstracts/media' as media;
 
+:root {
+  --padding: clamp(1rem, 4vw, 3.125rem);
+}
+
 .footer {
-  //display: grid;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   padding: var(--padding);
 }
 
-.wrapper {
-	backdrop-filter: blur(2rem);
-	background: var(--white-transparent-2);
-	padding: 3.125rem;
-	margin-block: 3.125rem;
+.blur {
+  margin-inline: auto;
+  backdrop-filter: blur(2rem);
+  background: var(--white-transparent-2);
+  padding: var(--padding) var(--padding) 0;
 }
 
 .box {
-	display: flex;
-	justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  border-bottom: 1px solid var(--white-transparent-2);
+  padding-bottom: clamp(1.5rem, 3vw, 2.5rem);
+  margin-bottom: clamp(1rem, 3vw, 2.5rem);
 }
 
 .items {
-	display: flex;
-	gap: 90px;
+  font-size: clamp(.8rem, 1.5vw, 1.1rem);
+  color: var(--background-color-1);
+  @include mixin.grid-col(4, clamp(2rem, 6vw, 5.625rem));
+  @include media.mobile {
+    @include mixin.grid-col(2, 2rem);
+  }
 }
 
 .bottom {
-	color: var(--background-color-1);
-	margin-block: 2.5rem;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	div {
-		display: flex;
-		gap: 1.5rem;
-	}
+  font-size: clamp(.8rem, 1.5vw, 1.1rem);
+  color: var(--background-color-1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .5rem;
+  padding-bottom: var(--padding);
+
+  div {
+    display: flex;
+    gap: 1.5rem;
+  }
+}
+
+.title {
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.itemsLinks {
+  display: grid;
+  gap: 1rem;
+}
+
+.link {
+  font-weight: 400;
+  color: var(--white-transparent-1);
 }
